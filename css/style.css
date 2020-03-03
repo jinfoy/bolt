@@ -36,6 +36,7 @@
   padding: 14px 12px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 .btn:hover {
   color: #333;
@@ -55,6 +56,7 @@
   padding: 250px 0;
 }
 .title_inner_item {
+  font-family: 'Raleway',sans-serif;
   font-size: 90px;
   color:#74cfae;
   font-weight: 700;
@@ -75,7 +77,7 @@
   padding-top: 50px;
 }
 .section_inner_container {
-  padding-left: 200px;
+  margin-left: 200px;
   text-align: center;
   color: white;
 }
@@ -204,3 +206,5 @@
   color:white;
   float:right;
 }
+
+/
