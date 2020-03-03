@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .body {
   font-family: 'Lato',sans-serif;
   width: 100%;
@@ -8,6 +10,9 @@
   display: block;
   clear: both;
 }
+.is-raleway {
+  font-family: 'Raleway',sans-serif;
+}
 
 /* header */
 .header {
@@ -16,16 +21,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
   z-index: 10;
 }
-.fa-bolt {
+.bolt_icon {
   float: left;
   color: #333;
 }
-
 .header_inner {
-  padding: 15px 0;
+  padding: 15px;
 }
 .btn {
   font-weight: bold;
@@ -40,6 +43,9 @@
 }
 .btn:hover {
   color: #333;
+}
+.header_menu {
+  display: none;
 }
 
 /* bolt theme */
@@ -56,7 +62,6 @@
   padding: 250px 0;
 }
 .title_inner_item {
-  font-family: 'Raleway',sans-serif;
   font-size: 90px;
   color:#74cfae;
   font-weight: 700;
@@ -82,7 +87,6 @@
   color: white;
 }
 .section_inner_item {
-  font-family: 'Raleway',sans-serif;
   margin-bottom: 35px;
   font-size: 24px;
 }
@@ -114,10 +118,13 @@
 }
 .article_inner_img {
   margin: 80px 0 0 100px;
-  transition: 0.3s;
 }
-.article_inner_img:hover {
+.article_inner_img_hover {
+  transition: 0.3s;
   opacity: 0.7;
+}
+.article_inner_img_hover:hover {
+  opacity: 1;
 }
 .article_inner_img:nth-child(3n+1) {
   margin-left: 0;
@@ -137,7 +144,7 @@
 }
 .article_inner_btn {
   margin-left: 90px;
-  width: 180px;
+  width: 120px;
   float: none;
   padding: 14px 20px;
 }
@@ -176,15 +183,21 @@
   background-color: #f2f2f2;
 }
 .nav_inner {
-  display: flex;
-  justify-content: center;
   padding: 200px 0;
 }
-.nav_inner_btn {
+.nav_inner_container {
+  display: flex;
+  justify-content: center;
+}
+.nav_inner_contents {
   height: 100px;
   width: 185px;
   text-align: center;
   line-height: 100px;
+}
+.nav_inner_btn {
+  display: inline-block;
+  width: 100%;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -205,6 +218,94 @@
 .footer_inner_text {
   color:white;
   float:right;
+  margin: 15px;
 }
 
-/
+/* レスポンシブルデザイン */
+/* tab */
+@media screen and (max-width:1199px) {
+  /* what we can do */
+  .section_inner {
+    padding-bottom: 25px; 
+    display: block;
+  }
+  .section_inner_img {
+    display: block;
+    margin: 0 auto;
+  }
+  .section_inner_container {
+    margin: 20px 0 0 0;
+  }
+
+  /* our latest work */
+  .article_inner_imgs {
+    flex-direction: column;
+  }
+  .article_inner_img {
+    margin: 40px 0 0 0;
+  }
+  .article_inner_img:not(:nth-child(1)) {
+    margin-top: 0; 
+  }
+  .article_inner_img:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  .article_inner_container {
+    display: block;
+    margin: 0;
+  }
+  .article_inner_btn {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 40px; 
+  }
+
+  /* our skills */
+  .skill_inner_container {
+    flex-direction: column;
+  }
+  .skill_inner_content {
+    margin: 88px 0 0 0;
+  }
+  .skill_inner_content:first-child {
+    margin-top: 0;
+  }
+}
+
+/* sp */
+@media screen and (max-width:767px) {
+  /* header */
+  .header_btn {
+    display:none;
+  }
+  .header_menu {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  /* bolt theme */
+  .title_inner {
+    margin: 160px 0 130px 0;
+  }
+  .title_inner_item {
+    font-size: 80px;
+  }
+  .title_inner_text {
+    font-size: 30px;
+  }
+
+  /* contact */
+  .nav_inner {
+    padding: 50px 0;
+  }
+  .nav_inner_container {
+    flex-direction: column;
+  }
+  .nav_inner_contents {
+    width: 100%;
+  }
+}

@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <meta name=”viewport” content=”width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This is my portfolio site.">
+    <meta name="keyword" content="bolt, bootstrap, portfolio">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Bolt - Free Bootstrap 3 Theme</title>
-    <meta name="description" content="This is my portfolio site.">
-    <meta name="keyword" content="bolt, bootstrap, portfolio">
   </head>
 
   <body class="body">
     <header class="header clearfix">
       <div class="inner header_inner">
-        <i class="fas fa-bolt fa-2x"></i>    
+        <i class="bolt_icon fas fa-bolt fa-2x"></i>    
         <div class="header_btn">
           <a class="btn" href="">Contact</a>
+        </div>
+        <div class="header_menu">
+          <i class="menu-bar fas fa-bars"></i>
         </div>
       </div>
     </header>
@@ -27,7 +30,7 @@
     <main>
       <div class="title">
         <div class="inner title_inner">
-          <h1 class="title_inner_item">Bolt Theme</h1>
+          <h1 class="title_inner_item is-raleway">Bolt Theme</h1>
           <p class="title_inner_text">FREE BOOTSTORAP THEMES</p>
         </div>
       </div>
@@ -36,7 +39,7 @@
         <div class="inner section_inner">
           <img class="section_inner_img" src="./img/iphone.png" alt="iPhoneの画像です">
           <div class="section_inner_container">
-            <h2 class="section_inner_item">WHAT WE CAN DO?</h2>
+            <h2 class="section_inner_item is-raleway">WHAT WE CAN DO?</h2>
             <p class="section_inner_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
@@ -44,35 +47,35 @@
 
       <article class="article">
         <div class="inner article_inner">
-          <h2 class="article_inner_item">OUR LATEST WORK</h2>
+          <h2 class="article_inner_item is-raleway">OUR LATEST WORK</h2>
             <ul class="article_inner_imgs">
               <li class="article_inner_img">
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/01.jpg" alt="スマホの画像です">
                 </a>
               </li>
               <li class="article_inner_img">
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/02.jpg" alt="ロボットの画像です">
                 </a>
               </li>
               <li class="article_inner_img">
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/03.jpg" alt="性別のロゴです">
                 </a>
               </li>
               <li class="article_inner_img">
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/04.jpg" alt="道具の画像です">
                 </a>
               </li>
               <li class="article_inner_img">
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/05.jpg" alt="ロボットの画像です">
                 </a>
               </li>
               <li class="article_inner_img"> 
-                <a href="">
+                <a class="article_inner_img_hover" href="">
                   <img src="./img/06.jpg" alt="ロボットの画像です">
                 </a>
               </li>
@@ -86,42 +89,54 @@
 
       <section class="skill">
         <div class="inner skill_inner">
-          <h2 class="skill_inner_item">OUR SKILLS</h2>
-          <div class="skill_inner_container clearfix">
-              <div class="skill_inner_content">
+          <h2 class="skill_inner_item is-raleway">OUR SKILLS</h2>
+          <div class="clearfix">
+            <ul class="skill_inner_container">
+              <li class="skill_inner_content">
                 <img src="./img/circle_01.png" alt="グラフです">
                 <p class="skill_inner_text">JavaScript</p>
-              </div>
-              <div class="skill_inner_content">
+              </li>
+              <li class="skill_inner_content">
                 <img src="./img/circle_02.png" alt="グラフです">
                 <p class="skill_inner_text">Bootstrap</p>
-              </div>
-              <div class="skill_inner_content">
+              </li>
+              <li class="skill_inner_content">
                 <img src="./img/circle_03.png" alt="グラフです">
                 <p class="skill_inner_text">WordPress</p>
-              </div>
-              <div class="skill_inner_content">
+              </li>
+              <li class="skill_inner_content">
                 <img src="./img/circle_04.png" alt="グラフです">
                 <p class="skill_inner_text">Photoshop</p>
-              </div>
+              </li>
+            </ul>
             </div>
         </div>
       </section>
 
       <nav class="nav">
         <div class="inner nav_inner">
-          <a class="nav_inner_btn" href="">
-            <i class="icon fab fa-facebook-f fa-2x"></i>
-          </a>
-          <a class="nav_inner_btn" href="">
-            <i class="icon fab fa-dribbble fa-2x"></i>
-          </a>
-          <a class="nav_inner_btn" href="">
-            <i class="icon fab fa-twitter fa-2x"></i>
-          </a>
-          <a class="nav_inner_btn" href="">
-            <i class="icon fas fa-envelope fa-2x"></i>
-          </a>
+         <ul class="nav_inner_container">
+           <li class="nav_inner_contents">
+             <a class="nav_inner_btn" href="">
+               <i class="icon fab fa-facebook-f fa-2x"></i>
+             </a>
+           </li>
+           <li class="nav_inner_contents">
+             <a class="nav_inner_btn" href="">
+               <i class="icon fab fa-dribbble fa-2x"></i>
+             </a>
+           </li>
+           <li class="nav_inner_contents">
+             <a class="nav_inner_btn" href="">
+               <i class="icon fab fa-twitter fa-2x"></i>
+             </a>
+           </li>
+           <li class="nav_inner_contents">
+             <a class="nav_inner_btn" href="">
+               <i class="icon fas fa-envelope fa-2x"></i>
+             </a>
+           </li>
+         </ul>
         </div>
       </nav>
 
