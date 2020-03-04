@@ -13,6 +13,12 @@
 .is-raleway {
   font-family: 'Raleway',sans-serif;
 }
+.main {
+  padding-top: 70px;
+}
+.img {
+  vertical-align: bottom;
+}
 
 /* header */
 .header {
@@ -91,7 +97,6 @@
   font-size: 24px;
 }
 .section_inner_text {
-  font-weight: lighter;
   font-size: 20px;
   word-break: normal;
   line-height: 30px;
@@ -112,7 +117,6 @@
   margin-bottom: 40px;
 }
 .article_inner_imgs {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -120,6 +124,8 @@
   margin: 80px 0 0 100px;
 }
 .article_inner_img_hover {
+  display: inline-block;
+  width: 300px;
   transition: 0.3s;
   opacity: 0.7;
 }
@@ -160,13 +166,13 @@
   padding: 70px 0 100px 0;
 }
 .skill_inner_container {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 .skill_inner_item {
   font-weight: lighter;
   font-size: 24px;
+  margin-bottom: 40px;
 }
 .skill_inner_content {
   margin-left: 180px;
@@ -190,16 +196,15 @@
   justify-content: center;
 }
 .nav_inner_contents {
-  height: 100px;
-  width: 185px;
   text-align: center;
-  line-height: 100px;
 }
 .nav_inner_btn {
   display: inline-block;
-  width: 100%;
+  padding: 40px;
+  width: 185px;
   transition: 0.3s;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .icon {
   color: #74cfae;
@@ -214,10 +219,10 @@
 }
 .footer_inner {
   padding: 20px 0 25px 0;
+  text-align: right;
 }
 .footer_inner_text {
   color:white;
-  float:right;
   margin: 15px;
 }
 
@@ -250,6 +255,12 @@
   .article_inner_img:nth-child(3n) {
     margin-bottom: 80px;
   }
+  .article_inner_img:last-child {
+    margin-bottom: 0;
+  }
+  .article_inner_text {
+    margin-top: 80px;
+  }
   .article_inner_container {
     display: block;
     margin: 0;
@@ -280,16 +291,30 @@
     display:none;
   }
   .header_menu {
-    display: inline-block;
+    display: inline-block; 
     float: right;
-    padding: 10px;
+  } 
+  .menu_trigger {
     border: 1px solid #ddd;
     border-radius: 4px;
+    width: 40px;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .menu_trigger span {
+    margin: 0 auto;
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 3px;
+    width: 80%;
   }
 
   /* bolt theme */
   .title_inner {
-    margin: 160px 0 130px 0;
+    padding: 160px 0 130px 0;
   }
   .title_inner_item {
     font-size: 80px;
@@ -305,7 +330,7 @@
   .nav_inner_container {
     flex-direction: column;
   }
-  .nav_inner_contents {
+  .nav_inner_btn {
     width: 100%;
   }
 }
