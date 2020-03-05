@@ -223,7 +223,6 @@
 }
 .footer_inner_text {
   color:white;
-  margin: 15px;
 }
 
 /* レスポンシブルデザイン */
@@ -233,10 +232,7 @@
   .section_inner {
     padding-bottom: 25px; 
     display: block;
-  }
-  .section_inner_img {
-    display: block;
-    margin: 0 auto;
+    text-align: center;
   }
   .section_inner_container {
     margin: 20px 0 0 0;
@@ -282,10 +278,19 @@
   .skill_inner_content:first-child {
     margin-top: 0;
   }
+
+  /* contact-form */
+  .nav_inner_btn {
+    width: 25%;
+    box-sizing: content-box;
+  }
 }
 
 /* sp */
 @media screen and (max-width:767px) {
+  .inner {
+    width: 97%;
+  }
   /* header */
   .header_btn {
     display:none;
